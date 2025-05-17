@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=VT323&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-rubik-regular: "Rubik", sans-serif;
+    --font-rubik-mono: "Rubik Mono One", monospace;
+    --font-vt323: "VT323", monospace;
+    --font-bytesized: "Bytesized", sans-serif;
+}
