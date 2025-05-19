@@ -18,41 +18,80 @@ import sprites from "../assets/sprites.svg";
     class="col-span-3 row-span-2 outline-black-500 outline-4 rounded-tl-xl outline-dashed bg-gray-200/30"
   >
     <div class="flex flex-col items-center justify-center h-full font-rubik">
-      <h1 class="text-4xl font-bold text-black font-rubik-mono">
+      <h1 class="text-4xl font-bold text-black font-rubik-mono select-none">
         I'm Victor Extremera
       </h1>
-      <p class="font-rubik-mono text-lg text-gray-600">Welcome to my portfolio!</p>
+      <p class="font-rubik-mono text-lg text-gray-600 select-none">
+        Welcome to my portfolio!
+      </p>
     </div>
   </div>
-  <!-- top right square -->
+  <!-- ABOUT ME -->
   <div
     class="col-span-2 row-span-2 outline-black-500 outline-4 rounded-tr-xl outline-dashed bg-gray-200/30"
   >
     <div class="flex flex-col items-center justify-center h-full font-rubik">
-      <h1 class="text-[42px] text-black font-vt323 font-extrabold px-4 -mt-6">ABOUT ME</h1>
-      <p class="font-rubik-regular font-normal text-2xl px-15 text-center">
-        I believe that with 
-        <b class="text-indigo-600">discipline</b> 
-        and 
-        <b class="text-red-600">passion</b>, 
-        you can 
-        <u><b class="text-purple-500">build anything</b></u> 
-        and that’s exactly what I try to do <i>every day</i>. 
+      <h1
+        class="text-[42px] text-black font-vt323 font-extrabold px-4 -mt-6 select-none"
+      >
+        ABOUT ME
+      </h1>
+      <p
+        class="font-rubik-regular font-normal text-2xl px-15 text-center select-none"
+      >
+        I believe that with
+        <b class="text-indigo-600">discipline</b>
+        and
+        <b class="text-red-600">passion</b>, you can
+        <u><b class="text-purple-500">build anything</b></u>
+        and that’s exactly what I try to do <i>every day</i>.
         <br />
-        <b><i>" I'm all about learning, creating, and enjoying the process "</i></b></p>
+        <b
+          ><i>I'm all about learning, creating, and enjoying the process</i
+          ></b
+        >
+      </p>
     </div>
   </div>
-  <!-- left 1x2 -->
+  <!-- MENU -->
   <div
     class="col-span-1 row-span-4 outline-black-500 outline-4 rounded-bl-xl outline-dashed bg-gray-200/30"
   >
+    <div class="flex flex-col items-center justify-center h-full px-10 py-30">
+      <a
+        href="#"
+        class="text-3xl text-black font-silkscreen font-extrabold p-4 select-none hover:text-red-700 hover:mb-4 active:underline active:underline-offset-4 transition-all"
+      >
+        ABOUT
+      </a>
+      <a
+        href="#"
+        class="text-3xl text-black font-silkscreen font-extrabold p-4 select-none hover:text-red-700 hover:mb-4 active:underline active:underline-offset-4 transition-all"
+      >
+        PROJECTS
+      </a>
+      <a
+        href="#"
+        class="text-3xl text-black font-silkscreen font-extrabold p-4 select-none hover:text-red-700 hover:mb-4 active:underline active:underline-offset-4 transition-all"
+      >
+        STUDIES
+      </a>
+      <a
+        href="#"
+        class="text-3xl text-black font-silkscreen font-extrabold p-4 select-none hover:text-red-700 hover:mb-4 active:underline active:underline-offset-4 transition-all"
+      >
+        CONTACT
+      </a>
+    </div>
   </div>
   <!-- TECH STACK -->
   <div
     class="col-span-3 row-span-4 outline-black-500 outline-4 outline-dashed bg-gray-200/30"
   >
-    <div class="flex flex-col items-center justify-center h-full">
-      <h2 class="text-[42px] text-black font-vt323 font-extrabold p-4 -mt-6">
+    <div class="flex flex-col items-center justify-center h-full select-none">
+      <h2
+        class="text-[42px] text-black font-vt323 font-extrabold p-4 -mt-6 select-none"
+      >
         TECH STACK
       </h2>
       <div class="grid grid-cols-4 grid-rows-3 gap-3 w-full px-40">
@@ -60,99 +99,91 @@ import sprites from "../assets/sprites.svg";
         <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href="https://astro.build/"
-            target="_blank"
             aria-label="Astro"
-            title="Visitar Astro"
+            title="Astro Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#Astro"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
             Astro
           </h3>
         </div>
 
         <!-- HTML -->
-         <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="HTML"
+            title="HTML Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#HTML"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            HTML 
+            HTML
           </h3>
         </div>
 
         <!-- CSS3 -->
-         <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="CSS"
+            title="CSS Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#CSS"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            CSS 
+            CSS
           </h3>
         </div>
 
         <!-- Docker -->
-         <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="Docker"
+            title="Docker Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#Docker"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            Docker 
+            Docker
           </h3>
         </div>
 
         <!-- Git -->
-         <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
             href=""
             target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="Git"
+            title="Git Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#Git"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            Git 
+            Git
           </h3>
         </div>
 
@@ -160,119 +191,107 @@ import sprites from "../assets/sprites.svg";
         <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="C#"
+            title="C# Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#CSharp"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            CSharp 
+            CSharp
           </h3>
         </div>
 
         <!-- Java -->
-         <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="Java"
+            title="Java Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#Java"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            Java 
+            Java
           </h3>
         </div>
 
         <!-- JavaScript -->
-         <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="JavaScript"
+            title="JavaScript Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#JavaScript"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            JavaScript 
+            JavaScript
           </h3>
         </div>
 
         <!-- JSON -->
-         <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="JSON"
+            title="JSON Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#JSON"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            JSON 
+            JSON
           </h3>
         </div>
 
         <!-- MySQL -->
-         <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="MySQL"
+            title="MySQL Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#MySQL"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            MySQL 
+            MySQL
           </h3>
         </div>
 
         <!-- Tailwind -->
-         <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="Tailwind"
+            title="Tailwind Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#Tailwind"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            Tailwind 
+            Tailwind
           </h3>
         </div>
 
@@ -280,19 +299,17 @@ import sprites from "../assets/sprites.svg";
         <div class="flex flex-col items-center justify-center">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Astro"
-            title="Visitar Astro"
+            aria-label="Python"
+            title="Python Logo"
           >
             <svg width="128" height="128">
               <use xlink:href="src/assets/sprites.svg#Python"></use>
             </svg>
           </a>
           <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer"
+            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            Python 
+            Python
           </h3>
         </div>
       </div>
@@ -302,10 +319,60 @@ import sprites from "../assets/sprites.svg";
   <div
     class="col-span-1 row-span-2 outline-black-500 outline-4 outline-dashed bg-gray-200/30"
   >
+    <div class="flex flex-col items-center justify-center h-full font-rubik">
+      <h1
+        class="text-4xl text-black font-marker font-extrabold text-center px-4 -mt-6 leading-18 -mb-4 select-none"
+      >
+        " MOVE THE <span class="text-[42px] underline underline-offset-8"
+          >BLOCKS</span
+        > AROUND "
+      </h1>
+    </div>
   </div>
-  <!-- 1x1 -->
+  <!-- CONTACT ME -->
   <div
     class="col-span-1 row-span-2 outline-black-500 outline-4 rounded-br-xl outline-dashed bg-gray-200/30"
   >
+    <div class="flex flex-col items-center justify-center h-full font-rubik">
+      <h1
+        class="text-[42px] text-black font-vt323 font-extrabold px-4 -mt-6 select-none"
+      >
+        CONTACT ME
+      </h1>
+      <div class="flex flex-row items-center justify-center">
+        <a
+          class="m-3 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          href="https://github.com/vextremera"
+          target="_blank"
+          aria-label="Github"
+          title="GitHub Link"
+        >
+          <svg width="128" height="128">
+            <use xlink:href="src/assets/sprites.svg#GitHub"></use>
+          </svg>
+        </a>
+        <a
+          class="m-3 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          href="https://www.linkedin.com/in/victor-extremera-7b461229a/"
+          target="_blank"
+          aria-label="Linekedin"
+          title="Linkedin Link"
+        >
+          <svg width="128" height="128">
+            <use xlink:href="src/assets/sprites.svg#Linkedin"></use>
+          </svg>
+        </a>
+        <a
+          class="m-3 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          href="mailto:vicres43@gmail.com?Subject=Me%ha%gustado%su%20portafolio"
+          aria-label="Gmail"
+          title="Gmail Link"
+        >
+          <svg width="128" height="128">
+            <use xlink:href="src/assets/sprites.svg#G"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
