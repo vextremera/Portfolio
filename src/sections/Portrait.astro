@@ -7,7 +7,7 @@ import sprites from "../assets/sprites.svg";
   <div id="balls-bg" class="w-full h-full"></div>
 </div>
 <!-- Blur efect -->
-<!-- <div class="fixed inset-0 -z-5 pointer-events-none backdrop-blur-lg"></div> -->
+<div class="fixed inset-0 -z-5 pointer-events-none backdrop-blur-xs"></div>
 
 
 <div
@@ -23,8 +23,8 @@ import sprites from "../assets/sprites.svg";
       <h1 class="text-4xl font-bold text-black text-center font-rubik-mono select-none">
         I'm Victor Extremera
       </h1>
-      <p class="font-rubik-mono text-lg text-gray-600 select-none">
-        Welcome to my portfolio!
+      <p class="font-rubik-mono text-lg text-gray-600 text-center select-none">
+        WEB DEVELOPER STUDENT!
       </p>
     </div>
   </div>
@@ -68,17 +68,17 @@ import sprites from "../assets/sprites.svg";
         <div class="flex flex-col items-center justify-center mx-4">
           <a
             class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            aria-label="JSON"
-            title="JSON Logo"
+            aria-label="MySQL"
+            title="MySQL Logo"
           >
             <svg width="128" height="128">
-              <use xlink:href="src/assets/sprites.svg#JSON"></use>
+              <use xlink:href="src/assets/sprites.svg#MySQL"></use>
             </svg>
           </a>
           <h3
             class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
           >
-            JSON
+            MySQL
           </h3>
         </div>
 
@@ -126,7 +126,7 @@ import sprites from "../assets/sprites.svg";
   <!-- MENU -->
   <div
     id="menu"
-    class="col-start-1 col-end-4 row-start-4 row-end-10 outline-black-500 outline-4 rounded-bl-xl outline-dashed bg-gray-200/30"
+    class="menu group col-start-1 col-end-4 row-start-4 row-end-10 outline-black-500 outline-4 rounded-bl-xl outline-dashed bg-gray-200/30"
     draggable="true"
   >
     <div class="flex flex-col items-center justify-center h-full px-10 py-30">
@@ -172,9 +172,9 @@ import sprites from "../assets/sprites.svg";
     draggable="true"
   >
     <div
-      class="grid grid-cols-2 grid-rows-2 gap-2 h-full w-full items-center justify-center p-10"
+      class="grid grid-cols-2 grid-rows-2 gap-2 h-full w-full items-center justify-center p-10 group-even:grid-cols-1"
     >
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center menu:display-none">
         <!-- FIRST ONE -->
         <div class="group main relative max-w-[255px]">
           <!-- Card -->
@@ -235,7 +235,7 @@ import sprites from "../assets/sprites.svg";
         </div>
       </div>
 
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center menu:display-none">
         <!-- SECOND ONE -->
         <div class="group main relative max-w-[255px]">
           <!-- Card -->
@@ -432,7 +432,8 @@ import sprites from "../assets/sprites.svg";
       <h1
         class="text-4xl text-black font-marker font-extrabold text-center px-4 -mt-6 leading-18 -mb-4 select-none"
       >
-        " MOVE THE <span class="text-[42px] underline underline-offset-8"
+        " MOVE THE
+        <span class="text-[42px] underline underline-offset-8"
           >BLOCKS</span
         > AROUND "
       </h1>
@@ -449,40 +450,40 @@ import sprites from "../assets/sprites.svg";
   >
     <div class="flex flex-col items-center justify-center h-full font-rubik">
       <h1
-        class="text-5xl text-black font-vt323 font-extrabold px-4 select-none"
+        class="text-5xl text-black font-vt323 font-extrabold px-4 py-4 select-none"
       >
         CONTACT ME
       </h1>
-      <div class="flex flex-row items-center justify-center">
+      <div class="flex flex-row items-center justify-center gap-2">
         <a
-          class="m-3 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          class="m-3 size-11 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-3xl bg-white"
           href="https://github.com/vextremera"
           target="_blank"
           aria-label="Github"
           title="GitHub Link"
         >
-          <svg width="128" height="128">
+          <svg width="128" height="auto" class="scale-110">
             <use xlink:href="src/assets/sprites.svg#GitHub"></use>
           </svg>
         </a>
         <a
-          class="m-3 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          class="m-3 size-11 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-3xl"
           href="https://www.linkedin.com/in/victor-extremera-7b461229a/"
           target="_blank"
           aria-label="Linekedin"
           title="Linkedin Link"
         >
-          <svg width="128" height="128">
+          <svg width="128" height="auto"¡>
             <use xlink:href="src/assets/sprites.svg#Linkedin"></use>
           </svg>
         </a>
         <a
-          class="m-3 size-10 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          class="m-3 size-11 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-3xl"
           href="mailto:vicres43@gmail.com?Subject=Me%ha%gustado%su%20portafolio"
           aria-label="Gmail"
           title="Gmail Link"
         >
-          <svg width="128" height="128">
+          <svg width="128" height="auto" class="">
             <use xlink:href="src/assets/sprites.svg#G"></use>
           </svg>
         </a>
@@ -494,68 +495,4 @@ import sprites from "../assets/sprites.svg";
 <script>
   import "../scripts/background.js"
   import "../scripts/draggeable_grids.js"
-
-/*
-  // Drag and swap logic
-  let dragged = null;
-
-  // Select all main grid cells by their draggable attribute
-  const gridCells = document.querySelectorAll('.grid > [draggable="true"]');
-
-  gridCells.forEach(cell => {
-    cell.addEventListener('dragstart', (e) => {
-      dragged = cell;
-      cell.style.opacity = '0.5';
-    });
-
-    cell.addEventListener('dragend', (e) => {
-      cell.style.opacity = '';
-      dragged = null;
-    });
-
-    cell.addEventListener('dragover', (e) => {
-      e.preventDefault();
-    });
-
-    cell.addEventListener('dragenter', (e) => {
-      e.preventDefault();
-      if (
-        dragged &&
-        dragged !== cell &&
-        (
-          (dragged.id === 'intro' && cell.id === 'techstack') ||
-          (dragged.id === 'techstack' && cell.id === 'intro')
-        ) 
-    ) { if (cell !== dragged) cell.style.outlineColor = '#2563eb' }
-      
-    });
-
-    cell.addEventListener('dragleave', (e) => {
-      cell.style.outlineColor = '';
-    });
-
-        cell.addEventListener('drop', (e) => {
-      e.preventDefault();
-      cell.style.outlineColor = '';
-      if (
-        dragged &&
-        dragged !== cell &&
-        (
-          (dragged.id === 'intro' && cell.id === 'techstack') ||
-          (dragged.id === 'techstack' && cell.id === 'intro')
-        )
-      ) {
-        // Swap the grid area classes
-        const tempClass = cell.className;
-        cell.className = dragged.className;
-        dragged.className = tempClass;
-
-        // Swap the IDs (optional, if you want to keep IDs unique per area)
-        const tempId = cell.id;
-        cell.id = dragged.id;
-        dragged.id = tempId;
-      }
-    });
-  });
-*/ 
 </script>
