@@ -20,11 +20,22 @@ import "../styles/global.css";
 		<ClientRouter />
 	</head>
 	<body>
+		<!-- Fondo absoluto de bolas erráticas animadas -->
+		<div class="fixed inset-0 -z-10 pointer-events-none">
+		<div id="balls-bg" class="w-full h-full"></div>
+		</div>
+		<!-- Blur efect -->
+		<div class="fixed inset-0 -z-5 pointer-events-none backdrop-blur-xs"></div>
+
 		<div>
 			<slot />
 		</div>
 	</body>
 </html>
+
+<script>
+  import "../scripts/background.js"
+</script>
 
 <style is:global>
 	html,
