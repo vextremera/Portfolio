@@ -2,497 +2,505 @@
 import sprites from "../assets/sprites.svg";
 ---
 
-<!-- Fondo absoluto de bolas erráticas animadas -->
-<div class="fixed inset-0 -z-10 pointer-events-none">
-  <div id="balls-bg" class="w-full h-full"></div>
-</div>
-<!-- Blur efect -->
-<div class="fixed inset-0 -z-5 pointer-events-none backdrop-blur-xs"></div>
-
-
-<div
-  class="grid grid-cols-10 grid-rows-9 gap-5 h-screen w-screen pt-10 px-70 py-20 font-inter"
->
-<!--  -->
+<section id="portrait" class="items-center justify-center h-screen w-screen mt-15">
   <div
-    id="intro"
-    class="col-start-1 col-end-7 row-start-1 row-end-4 outline-black-500 outline-4 rounded-tl-xl outline-dashed bg-gray-200/30"
-    draggable="true"
+    class="grid grid-cols-10 grid-rows-9 gap-5 h-screen w-screen px-80 py-20 font-inter"
   >
-    <div class="flex flex-col items-center justify-center h-full font-rubik">
-      <h1 class="text-4xl font-bold text-black text-center font-rubik-mono select-none">
-        I'm Victor Extremera
-      </h1>
-      <p class="font-rubik-mono text-lg text-gray-600 text-center select-none">
-        WEB DEVELOPER STUDENT!
-      </p>
-    </div>
-  </div>
-
-  <!-- -------------------------------------------------- -->
-
-  <!-- TECH STACK -->
-  <div
-    id="techstack"
-    class="col-start-7 col-end-11 row-start-1 row-end-4 outline-black-500 outline-4 rounded-tr-xl outline-dashed bg-gray-200/30"
-    draggable="true"
-  >
-    <div class="flex flex-col items-center justify-center h-full font-rubik">
-      <h1
-        class="text-5xl text-black font-vt323 font-extrabold px-4 -mt-6 select-none"
-      >
-        TECH STACK
-      </h1>
-      <div class="flex flex-row items-center justify-center mt-6">
-        <!-- Git -->
-        <div class="flex flex-col items-center justify-center mx-4">
-          <a
-            class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href=""
-            target="_blank"
-            aria-label="Git"
-            title="Git Logo"
-          >
-            <svg width="128" height="128">
-              <use xlink:href="src/assets/sprites.svg#Git"></use>
-            </svg>
-          </a>
-          <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
-          >
-            Git
-          </h3>
-        </div>
-
-        <!-- JSON -->
-        <div class="flex flex-col items-center justify-center mx-4">
-          <a
-            class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            aria-label="MySQL"
-            title="MySQL Logo"
-          >
-            <svg width="128" height="128">
-              <use xlink:href="src/assets/sprites.svg#MySQL"></use>
-            </svg>
-          </a>
-          <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
-          >
-            MySQL
-          </h3>
-        </div>
-
-        <!-- Java -->
-        <div class="flex flex-col items-center justify-center mx-4">
-          <a
-            class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            aria-label="Java"
-            title="Java Logo"
-          >
-            <svg width="128" height="128">
-              <use xlink:href="src/assets/sprites.svg#Java"></use>
-            </svg>
-          </a>
-          <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
-          >
-            Java
-          </h3>
-        </div>
-
-        <!-- JavaScript -->
-        <div class="flex flex-col items-center justify-center mx-4">
-          <a
-            class="m-2 size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            aria-label="JavaScript"
-            title="JavaScript Logo"
-          >
-            <svg width="128" height="128">
-              <use xlink:href="src/assets/sprites.svg#JavaScript"></use>
-            </svg>
-          </a>
-          <h3
-            class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
-          >
-            JavaScript
-          </h3>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- -------------------------------------------------- -->
-
-  <!-- MENU -->
-  <div
-    id="menu"
-    class="menu group col-start-1 col-end-4 row-start-4 row-end-10 outline-black-500 outline-4 rounded-bl-xl outline-dashed bg-gray-200/30"
-    draggable="true"
-  >
-    <div class="flex flex-col items-center justify-center h-full px-10 py-30">
-      <a
-        href="#"
-        class="text-3xl text-black font-silkscreen font-extrabold p-4 select-none hover:scale-110 transition-all"
-      >
-        ABOUT
-      </a>
-      <a
-        href="#"
-        class="text-3xl text-black font-silkscreen font-extrabold p-4 select-none hover:scale-110 transition-all"
-      >
-        PROJECTS
-      </a>
-      <a
-        href="#"
-        class="text-3xl text-black font-silkscreen font-extrabold p-4 select-none hover:scale-110 transition-all"
-      >
-        TECHSTACK
-      </a>
-      <a
-        href="#"
-        class="text-3xl text-black font-silkscreen font-extrabold p-4 select-none hover:scale-110 transition-all"
-      >
-        STUDIES
-      </a>
-      <a
-        href="#"
-        class="text-3xl text-black font-silkscreen font-extrabold p-4 select-none hover:scale-110 transition-all"
-      >
-        CONTACT
-      </a>
-    </div>
-  </div>
-
-  <!-- -------------------------------------------------- -->
-
-  <!-- PROJECTS -->
-  <div
-    id="projects"
-    class="col-start-4 col-end-9 row-start-4 row-end-10 outline-black-500 outline-4 outline-dashed bg-gray-200/30"
-    draggable="true"
-  >
+    <!--  -->
     <div
-      class="grid grid-cols-2 grid-rows-2 gap-2 h-full w-full items-center justify-center p-10 group-even:grid-cols-1"
+      id="intro"
+      class="col-start-1 col-end-7 row-start-1 row-end-4 outline-black-500 outline-4 rounded-tl-xl outline-dashed bg-gray-200/30"
+      draggable="true"
     >
-      <div class="flex justify-center items-center menu:display-none">
-        <!-- FIRST ONE -->
-        <div class="group main relative max-w-[255px]">
-          <!-- Card -->
-          <div
-            class="w-[15em] h-[10em] bg-neutral-800 rounded-md cursor-pointer relative"
-          >
-            <!-- Contenido de la card -->
-            <div class="flex items-center justify-center">
-              <!-- Contenido principal aquí -->
-            </div>
-            <!-- Fondo trasero de la card -->
-            <div
-              class="absolute w-[15rem] h-48 bg-neutral-900/70 rounded-md mt-8 ml-2.75 transition-all duration-200 z-[-1] group-hover:-mt-0.5 group-hover:ml-0 group-hover:scale-110 group-hover:h-62"
-            >
-            </div>
-          </div>
-          <!-- Datos del proyecto -->
-          <div class="flex flex-row mt-4">
-            <div
-              class="w-9 h-9 bg-neutral-800 rounded-[5px] overflow-hidden -mt-1"
-            >
-            </div>
-            <div
-              class="flex flex-col justify-center ml-2 font-montserrat text-white"
-            >
-              <div class="font-rubik-regular font-bold text-md -mt-1.5">
-                Weather API Scrapping
-              </div>
-              <div class="font-vt323 text-md -mt-1.5 tracking-wider">
-                Victor Extremera
-              </div>
-            </div>
-          </div>
-          <!-- Botones de interacción -->
-          <div class="flex gap-2 transition-all duration-200">
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >Python</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >MySQL</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >JSON</span
-              >
-            </div>
-          </div>
-        </div>
+      <div class="flex flex-col items-center justify-center h-full font-rubik">
+        <h1
+          class="text-[2.5rem] font-bold text-black text-center font-rubik-mono select-none"
+        >
+          I'm Victor Extremera
+        </h1>
+        <p
+          class="font-rubik-mono text-xl text-gray-600 text-center select-none"
+        >
+          WEB DEVELOPER STUDENT!
+        </p>
       </div>
+    </div>
 
-      <div class="flex justify-center items-center menu:display-none">
-        <!-- SECOND ONE -->
-        <div class="group main relative max-w-[255px]">
-          <!-- Card -->
-          <div
-            class="w-[15em] h-[10em] bg-neutral-800 rounded-md cursor-pointer relative"
-          >
-            <!-- Contenido de la card -->
-            <div class="flex items-center justify-center">
-              <!-- Contenido principal aquí -->
-            </div>
-            <!-- Fondo trasero de la card -->
-            <div
-              class="absolute w-[15rem] h-48 bg-neutral-900/70 rounded-md mt-8 ml-2.75 transition-all duration-200 z-[-1] group-hover:-mt-0.5 group-hover:ml-0 group-hover:scale-110 group-hover:h-62"
-            >
-            </div>
-          </div>
-          <!-- Datos del proyecto -->
-          <div class="flex flex-row mt-4">
-            <div
-              class="w-9 h-9 bg-neutral-800 rounded-[5px] overflow-hidden -mt-1"
-            >
-            </div>
-            <div
-              class="flex flex-col justify-center ml-2 font-montserrat text-white"
-            >
-              <div class="font-rubik-regular font-bold text-md -mt-1.5">
-                Weather API Scrapping
-              </div>
-              <div class="font-vt323 text-md -mt-1.5 tracking-wider">
-                Victor Extremera
-              </div>
-            </div>
-          </div>
-          <!-- Botones de interacción -->
-          <div class="flex gap-2 transition-all duration-200">
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >Python</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >MySQL</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >JSON</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- -------------------------------------------------- -->
 
-      <div class="flex justify-center items-center">
-        <!-- THIRD ONE -->
-        <div class="group main relative max-w-[255px]">
-          <!-- Card -->
-          <div
-            class="w-[15em] h-[10em] bg-neutral-800 rounded-md cursor-pointer relative"
-          >
-            <!-- Contenido de la card -->
-            <div class="flex items-center justify-center">
-              <!-- Contenido principal aquí -->
-            </div>
-            <!-- Fondo trasero de la card -->
-            <div
-              class="absolute w-[15rem] h-48 bg-neutral-900/70 rounded-md mt-8 ml-2.75 transition-all duration-200 z-[-1] group-hover:-mt-0.5 group-hover:ml-0 group-hover:scale-110 group-hover:h-62"
+    <!-- TECH STACK -->
+    <div
+      id="techstack"
+      class="col-start-7 col-end-11 row-start-1 row-end-4 outline-black-500 outline-4 rounded-tr-xl outline-dashed bg-gray-200/30"
+      draggable="true"
+    >
+      <div class="flex flex-col items-center justify-center h-full font-rubik">
+        <h1
+          class="text-[3.2rem] text-black font-vt323 font-extrabold px-4 select-none"
+        >
+          TECH STACK
+        </h1>
+        <div class="flex flex-row items-center justify-center">
+          <!-- Git -->
+          <div class="flex flex-col items-center justify-center mx-4">
+            <a
+              class="m-2 size-18 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+              href=""
+              target="_blank"
+              aria-label="Git"
+              title="Git Logo"
             >
-            </div>
+              <svg width="128" height="128">
+                <use xlink:href="src/assets/sprites.svg#Git"></use>
+              </svg>
+            </a>
+            <h3
+              class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
+            >
+              Git
+            </h3>
           </div>
-          <!-- Datos del proyecto -->
-          <div class="flex flex-row mt-4">
-            <div
-              class="w-9 h-9 bg-neutral-800 rounded-[5px] overflow-hidden -mt-1"
-            >
-            </div>
-            <div
-              class="flex flex-col justify-center ml-2 font-montserrat text-white"
-            >
-              <div class="font-rubik-regular font-bold text-md -mt-1.5">
-                Weather API Scrapping
-              </div>
-              <div class="font-vt323 text-md -mt-1.5 tracking-wider">
-                Victor Extremera
-              </div>
-            </div>
-          </div>
-          <!-- Botones de interacción -->
-          <div class="flex gap-2 transition-all duration-200">
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >Python</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >MySQL</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >JSON</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="flex justify-center items-center">
-        <!-- FOURTH ONE -->
-        <div class="group main relative max-w-[255px]">
-          <!-- Card -->
-          <div
-            class="w-[15em] h-[10em] bg-neutral-800 rounded-md cursor-pointer relative"
-          >
-            <!-- Contenido de la card -->
-            <div class="flex items-center justify-center">
-              <!-- Contenido principal aquí -->
-            </div>
-            <!-- Fondo trasero de la card -->
-            <div
-              class="absolute w-[15rem] h-48 bg-neutral-900/70 rounded-md mt-8 ml-2.75 transition-all duration-200 z-[-1] group-hover:-mt-0.5 group-hover:ml-0 group-hover:scale-110 group-hover:h-62"
+          <!-- JSON -->
+          <div class="flex flex-col items-center justify-center mx-4">
+            <a
+              class="m-2 size-18 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+              aria-label="MySQL"
+              title="MySQL Logo"
             >
-            </div>
+              <svg width="128" height="128">
+                <use xlink:href="src/assets/sprites.svg#MySQL"></use>
+              </svg>
+            </a>
+            <h3
+              class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
+            >
+              MySQL
+            </h3>
           </div>
-          <!-- Datos del proyecto -->
-          <div class="flex flex-row mt-4">
-            <div
-              class="w-9 h-9 bg-neutral-800 rounded-[5px] overflow-hidden -mt-1"
+
+          <!-- Java -->
+          <div class="flex flex-col items-center justify-center mx-4">
+            <a
+              class="m-2 size-18 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+              aria-label="Java"
+              title="Java Logo"
             >
-            </div>
-            <div
-              class="flex flex-col justify-center ml-2 font-montserrat text-white"
+              <svg width="128" height="128">
+                <use xlink:href="src/assets/sprites.svg#Java"></use>
+              </svg>
+            </a>
+            <h3
+              class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
             >
-              <div class="font-rubik-regular font-bold text-md -mt-1.5">
-                Weather API Scrapping
-              </div>
-              <div class="font-vt323 text-md -mt-1.5 tracking-wider">
-                Victor Extremera
-              </div>
-            </div>
+              Java
+            </h3>
           </div>
-          <!-- Botones de interacción -->
-          <div class="flex gap-2 transition-all duration-200">
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+
+          <!-- JavaScript -->
+          <div class="flex flex-col items-center justify-center mx-4">
+            <a
+              class="m-2 size-18 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+              aria-label="JavaScript"
+              title="JavaScript Logo"
             >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >Python</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              <svg width="128" height="128">
+                <use xlink:href="src/assets/sprites.svg#JavaScript"></use>
+              </svg>
+            </a>
+            <h3
+              class="font-bytesized text-xl hover:underline-offset-8 hover:underline z-10 cursor-pointer select-none"
             >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >MySQL</span
-              >
-            </div>
-            <div
-              class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
-            >
-              <span class="font-montserrat text-[0.8em] text-black font-bold px-1"
-                >JSON</span
-              >
-            </div>
+              JavaScript
+            </h3>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- -------------------------------------------------- -->
+    <!-- -------------------------------------------------- -->
 
-  <!-- MOVE THE BLOCKS -->
-  <div
-    id="move"
-    class="col-start-9 col-end-11 row-start-4 row-end-7 outline-black-500 outline-4 outline-dashed bg-gray-200/30"
-    draggable="true"
-  >
-    <div class="flex flex-col items-center justify-center h-full font-rubik">
-      <h1
-        class="text-4xl text-black font-marker font-extrabold text-center px-4 -mt-6 leading-18 -mb-4 select-none"
+    <!-- MENU -->
+    <div
+      id="menu"
+      class="menu group col-start-1 col-end-4 row-start-4 row-end-10 outline-black-500 outline-4 rounded-bl-xl outline-dashed bg-gray-200/30"
+      draggable="true"
+    >
+      <div class="flex flex-col items-center justify-center h-full px-10 py-30">
+        <a
+          href="#"
+          class="text-4xl text-black font-silkscreen font-extrabold p-4 py-6 select-none hover:scale-110 transition-all"
+        >
+          ABOUT
+        </a>
+        <a
+          href="#"
+          class="text-4xl text-black font-silkscreen font-extrabold p-4 py-6 select-none hover:scale-110 transition-all"
+        >
+          PROJECTS
+        </a>
+        <a
+          href="#"
+          class="text-4xl text-black font-silkscreen font-extrabold p-4 py-6 select-none hover:scale-110 transition-all"
+        >
+          TECHSTACK
+        </a>
+        <a
+          href="#"
+          class="text-4xl text-black font-silkscreen font-extrabold p-4 py-6 select-none hover:scale-110 transition-all"
+        >
+          STUDIES
+        </a>
+        <a
+          href="#"
+          class="text-4xl text-black font-silkscreen font-extrabold p-4 py-6 select-none hover:scale-110 transition-all"
+        >
+          CONTACT
+        </a>
+      </div>
+    </div>
+
+    <!-- -------------------------------------------------- -->
+
+    <!-- PROJECTS -->
+    <div
+      id="projects"
+      class="col-start-4 col-end-9 row-start-4 row-end-10 outline-black-500 outline-4 outline-dashed bg-gray-200/30"
+      draggable="true"
+    >
+      <div
+        class="grid grid-cols-2 grid-rows-2 gap-6 h-full w-full items-center justify-center p-10 group-even:grid-cols-1"
       >
-        " MOVE THE
-        <span class="text-[42px] underline underline-offset-8"
-          >BLOCKS</span
-        > AROUND "
-      </h1>
+        <div class="flex justify-center items-center menu:display-none">
+          <!-- FIRST ONE -->
+          <div class="group main relative max-w-[255px]">
+            <!-- Card -->
+            <div
+              class="w-[15em] h-[10em] bg-neutral-800 rounded-md cursor-pointer relative"
+            >
+              <!-- Contenido de la card -->
+              <div class="flex items-center justify-center">
+                <!-- Contenido principal aquí -->
+              </div>
+              <!-- Fondo trasero de la card -->
+              <div
+                class="absolute w-[15rem] h-48 bg-neutral-900/70 rounded-md mt-8 ml-2.75 transition-all duration-200 z-[-1] group-hover:-mt-0.5 group-hover:ml-0 group-hover:scale-110 group-hover:h-62"
+              >
+              </div>
+            </div>
+            <!-- Datos del proyecto -->
+            <div class="flex flex-row mt-4">
+              <div
+                class="w-9 h-9 bg-neutral-800 rounded-[5px] overflow-hidden -mt-1"
+              >
+              </div>
+              <div
+                class="flex flex-col justify-center ml-2 font-montserrat text-white"
+              >
+                <div class="font-rubik-regular font-bold text-md -mt-1.5">
+                  Weather API Scrapping
+                </div>
+                <div class="font-vt323 text-md -mt-1.5 tracking-wider">
+                  Victor Extremera
+                </div>
+              </div>
+            </div>
+            <!-- Botones de interacción -->
+            <div class="flex gap-2 transition-all duration-200">
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >Python</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >MySQL</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >JSON</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center menu:display-none">
+          <!-- SECOND ONE -->
+          <div class="group main relative max-w-[255px]">
+            <!-- Card -->
+            <div
+              class="w-[15em] h-[10em] bg-neutral-800 rounded-md cursor-pointer relative"
+            >
+              <!-- Contenido de la card -->
+              <div class="flex items-center justify-center">
+                <!-- Contenido principal aquí -->
+              </div>
+              <!-- Fondo trasero de la card -->
+              <div
+                class="absolute w-[15rem] h-48 bg-neutral-900/70 rounded-md mt-8 ml-2.75 transition-all duration-200 z-[-1] group-hover:-mt-0.5 group-hover:ml-0 group-hover:scale-110 group-hover:h-62"
+              >
+              </div>
+            </div>
+            <!-- Datos del proyecto -->
+            <div class="flex flex-row mt-4">
+              <div
+                class="w-9 h-9 bg-neutral-800 rounded-[5px] overflow-hidden -mt-1"
+              >
+              </div>
+              <div
+                class="flex flex-col justify-center ml-2 font-montserrat text-white"
+              >
+                <div class="font-rubik-regular font-bold text-md -mt-1.5">
+                  Weather API Scrapping
+                </div>
+                <div class="font-vt323 text-md -mt-1.5 tracking-wider">
+                  Victor Extremera
+                </div>
+              </div>
+            </div>
+            <!-- Botones de interacción -->
+            <div class="flex gap-2 transition-all duration-200">
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >Python</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >MySQL</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >JSON</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <!-- THIRD ONE -->
+          <div class="group main relative max-w-[255px]">
+            <!-- Card -->
+            <div
+              class="w-[15em] h-[10em] bg-neutral-800 rounded-md cursor-pointer relative"
+            >
+              <!-- Contenido de la card -->
+              <div class="flex items-center justify-center">
+                <!-- Contenido principal aquí -->
+              </div>
+              <!-- Fondo trasero de la card -->
+              <div
+                class="absolute w-[15rem] h-48 bg-neutral-900/70 rounded-md mt-8 ml-2.75 transition-all duration-200 z-[-1] group-hover:-mt-0.5 group-hover:ml-0 group-hover:scale-110 group-hover:h-62"
+              >
+              </div>
+            </div>
+            <!-- Datos del proyecto -->
+            <div class="flex flex-row mt-4">
+              <div
+                class="w-9 h-9 bg-neutral-800 rounded-[5px] overflow-hidden -mt-1"
+              >
+              </div>
+              <div
+                class="flex flex-col justify-center ml-2 font-montserrat text-white"
+              >
+                <div class="font-rubik-regular font-bold text-md -mt-1.5">
+                  Weather API Scrapping
+                </div>
+                <div class="font-vt323 text-md -mt-1.5 tracking-wider">
+                  Victor Extremera
+                </div>
+              </div>
+            </div>
+            <!-- Botones de interacción -->
+            <div class="flex gap-2 transition-all duration-200">
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >Python</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >MySQL</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >JSON</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <!-- FOURTH ONE -->
+          <div class="group main relative max-w-[255px]">
+            <!-- Card -->
+            <div
+              class="w-[15em] h-[10em] bg-neutral-800 rounded-md cursor-pointer relative"
+            >
+              <!-- Contenido de la card -->
+              <div class="flex items-center justify-center">
+                <!-- Contenido principal aquí -->
+              </div>
+              <!-- Fondo trasero de la card -->
+              <div
+                class="absolute w-[15rem] h-48 bg-neutral-900/70 rounded-md mt-8 ml-2.75 transition-all duration-200 z-[-1] group-hover:-mt-0.5 group-hover:ml-0 group-hover:scale-110 group-hover:h-62"
+              >
+              </div>
+            </div>
+            <!-- Datos del proyecto -->
+            <div class="flex flex-row mt-4">
+              <div
+                class="w-9 h-9 bg-neutral-800 rounded-[5px] overflow-hidden -mt-1"
+              >
+              </div>
+              <div
+                class="flex flex-col justify-center ml-2 font-montserrat text-white"
+              >
+                <div class="font-rubik-regular font-bold text-md -mt-1.5">
+                  Weather API Scrapping
+                </div>
+                <div class="font-vt323 text-md -mt-1.5 tracking-wider">
+                  Victor Extremera
+                </div>
+              </div>
+            </div>
+            <!-- Botones de interacción -->
+            <div class="flex gap-2 transition-all duration-200">
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >Python</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >MySQL</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center h-6 rounded-sm -mt-2 opacity-0 bg-neutral-300 transition-all duration-200 group-hover:mt-2 group-hover:opacity-100 hover:bg-neutral-200 cursor-pointer"
+              >
+                <span
+                  class="font-montserrat text-[0.8em] text-black font-bold px-1"
+                  >JSON</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- -------------------------------------------------- -->
+    <!-- -------------------------------------------------- -->
 
-  <!-- CONTACT ME -->
-  <div
-    id="contact"
-    class="col-start-9 col-end-11 row-start-7 row-end-10 outline-black-500 outline-4 rounded-br-xl outline-dashed bg-gray-200/30"
-    draggable="true"
-  >
-    <div class="flex flex-col items-center justify-center h-full font-rubik">
-      <h1
-        class="text-5xl text-black font-vt323 font-extrabold px-4 py-4 select-none"
-      >
-        CONTACT ME
-      </h1>
-      <div class="flex flex-row items-center justify-center gap-2">
-        <a
-          class="m-3 size-11 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-3xl bg-white"
-          href="https://github.com/vextremera"
-          target="_blank"
-          aria-label="Github"
-          title="GitHub Link"
+    <!-- MOVE THE BLOCKS -->
+    <div
+      id="move"
+      class="col-start-9 col-end-11 row-start-4 row-end-7 outline-black-500 outline-4 outline-dashed bg-gray-200/30"
+      draggable="true"
+    >
+      <div class="flex flex-col items-center justify-center h-full font-rubik">
+        <h1
+          class="text-4xl text-black font-marker font-extrabold text-center px-4 -mt-6 leading-18 -mb-4 select-none"
         >
-          <svg width="128" height="auto" class="scale-110">
-            <use xlink:href="src/assets/sprites.svg#GitHub"></use>
-          </svg>
-        </a>
-        <a
-          class="m-3 size-11 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-3xl"
-          href="https://www.linkedin.com/in/victor-extremera-7b461229a/"
-          target="_blank"
-          aria-label="Linekedin"
-          title="Linkedin Link"
+          " MOVE THE
+          <span class="text-[42px] underline underline-offset-8">BLOCKS</span> AROUND
+          "
+        </h1>
+      </div>
+    </div>
+
+    <!-- -------------------------------------------------- -->
+
+    <!-- CONTACT ME -->
+    <div
+      id="contact"
+      class="col-start-9 col-end-11 row-start-7 row-end-10 outline-black-500 outline-4 rounded-br-xl outline-dashed bg-gray-200/30"
+      draggable="true"
+    >
+      <div class="flex flex-col items-center justify-center h-full font-rubik">
+        <h1
+          class="text-[3.2rem] text-black font-vt323 font-extrabold px-2 select-none"
         >
-          <svg width="128" height="auto"¡>
-            <use xlink:href="src/assets/sprites.svg#Linkedin"></use>
-          </svg>
-        </a>
-        <a
-          class="m-3 size-11 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-3xl"
-          href="mailto:vicres43@gmail.com?Subject=Me%ha%gustado%su%20portafolio"
-          aria-label="Gmail"
-          title="Gmail Link"
-        >
-          <svg width="128" height="auto" class="">
-            <use xlink:href="src/assets/sprites.svg#G"></use>
-          </svg>
-        </a>
+          CONTACT ME
+        </h1>
+        <div class="flex flex-row items-center justify-center gap-2">
+          <a
+            class="m-3 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-3xl bg-white"
+            href="https://github.com/vextremera"
+            target="_blank"
+            aria-label="Github"
+            title="GitHub Link"
+          >
+            <svg width="128" height="auto" class="scale-110">
+              <use xlink:href="src/assets/sprites.svg#GitHub"></use>
+            </svg>
+          </a>
+          <a
+            class="m-3 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-3xl"
+            href="https://www.linkedin.com/in/victor-extremera-7b461229a/"
+            target="_blank"
+            aria-label="Linekedin"
+            title="Linkedin Link"
+          >
+            <svg width="128" height="auto" ¡>
+              <use xlink:href="src/assets/sprites.svg#Linkedin"></use>
+            </svg>
+          </a>
+          <a
+            class="m-3 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-3xl"
+            href="mailto:vicres43@gmail.com?Subject=Me%ha%gustado%su%20portafolio"
+            aria-label="Gmail"
+            title="Gmail Link"
+          >
+            <svg width="128" height="auto" class="">
+              <use xlink:href="src/assets/sprites.svg#G"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <script>
-  import "../scripts/background.js"
-  import "../scripts/draggeable_grids.js"
+  import "../scripts/draggeable_grids.js";
 </script>
